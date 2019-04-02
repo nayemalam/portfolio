@@ -184,13 +184,19 @@ p{
         /* padding: 3em; */
     }
     div#avatar>img{
-        padding-top: 50px;
-      
+        display: block;
+        max-width: 200%;
+        margin-left: -20px;
+        /* padding-top: 50px; */
     }
 
     .na-logo {
         margin: 0 auto;
         width: 100px;
+    }
+
+    figure {
+        margin-bottom: 50px !important;
     }
 
     figcaption {
@@ -232,8 +238,11 @@ p{
         font-size: 4em !important;
         margin-top: 1em;
     }
-    .big {
+    nav ul li a>span#big {
         font-size: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+
     }
     ul.social-links li {
         display: inline;
@@ -243,6 +252,10 @@ p{
         padding-top: 25px;
         text-align: center;
     }
+
+    
+
+    
 
 
 }

@@ -1,3 +1,4 @@
+
 console.log("Are you a developer? Let's talk!")
 
 
@@ -10,9 +11,15 @@ console.log("Are you a developer? Let's talk!")
 // });
 
 $(document).ready(function () {
+    
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('ul').toggleClass('active open');
     })
+
+    $('span#big').hover(function () {
+        $(this).effect("shake", { times:2}, 1000);
+    });
     
 });
+
