@@ -42,7 +42,7 @@ __   __                                _     _                        _
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <!-- Externals -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/aos.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/bulma.min.css">
         
@@ -51,8 +51,20 @@ __   __                                _     _                        _
     <body>
         <div id="aside">
             <figure>
+                
+                <!-- <div id="avatar"><img src="./images/na-logo.png" alt="na-logo" class="image is-5by3"></div> -->
+            <figcaption>Nayem Alam</figcaption>
+                
+            </figure>
+            <div class="menu-toggler">
+                <div class="bar half start"></div>
+                <div class="bar"></div>
+                <div class="bar half end"></div>
+            </div>
+
+            <nav class="sidebar"> 
                 <div id="avatar"><img src="./images/na-logo.png" alt="na-logo" class="image is-5by3"></div>
-                <figcaption>Nayem Alam</figcaption>
+                <h1 class="fig-caption">Nayem Alam</h1>
                 <div class="center-items">
                     <ul class="social-links">
                         <li><a href="#"><i class="fab fa-github fa-lg"></i></a></li>
@@ -61,13 +73,6 @@ __   __                                _     _                        _
                         <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
                     </ul>
                 </div>
-            </figure>
-            <div class="menu-toggler">
-                <div class="bar half start"></div>
-                <div class="bar"></div>
-                <div class="bar half end"></div>
-            </div>
-            <nav>
                 <ul>
                     <!-- <li><img src="./images/na-logo.png" alt="nayem-logo" class="logo-menu"/></li> -->
                     <li><a href="/index.html" class="nav-link">Home</a></li>
@@ -75,13 +80,14 @@ __   __                                _     _                        _
                     <li><a href="#" class="nav-link">Portfolio</a></li>
                     <li><a href="#" class="nav-link">Media</a></li>
                     <li><a href="#" class="nav-link">Speaking</a></li>
-                    <li><a href="#" class="nav-link">Say Hi! <span id="big">👋</span></a></li>
+                    <li><a href="#" class="nav-link">Say Hi!<span id="big">👋</span></a></li>
                 </ul>
             </nav>
             
         </div>
-        <div id="main" class="scrollable content">
-            <h1>Hello, I am a <span class="typewriter line-1 anim-typewriter">Designer.</span></h1>
+
+        <div id="main" class="content">
+            <h1>Hello,  <span class="typewriter line-1 anim-typewriter">....</span></h1>
             <p>If you'd like to connect with me, please hit me up!</p>
             <a href="#" class="cta">Click Me!</a>
             <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
@@ -90,6 +96,8 @@ __   __                                _     _                        _
             <!-- <img class="wave" src="./images/bg.svg" alt="bg"/> -->
         
             <h3>lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</h3>
+                <button class="button is-info" data-aos='flip-up'>Hello</button>
+
             <p>lorem ipsumlorem ipsumlorem ipsumlorem ipsumrem ipsumlorem ipsum
                     lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
                     lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
@@ -111,6 +119,8 @@ __   __                                _     _                        _
                     lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
                     lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo <br/><br/><br/><br/><br/>
             </p>
+           
+            
             
 
         </div>
@@ -118,6 +128,10 @@ __   __                                _     _                        _
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/aos.js"></script>
+
+    
+
     
     
 

@@ -3,7 +3,6 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Quicksand', 'sans-serif' !important;
-    overflow: auto;
     scroll-behavior: smooth;
 }
 
@@ -15,13 +14,27 @@ div#aside {
     padding: 2em 2em 2em 2em;
 }
 
+.on-top {
+    /* overflow: hidden; */
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    /* background: red; */
+    padding: 2em 0em 0em 0em;
+    justify-content: space-evenly;
+}
+
 figcaption {
     font-size: 1.8em;
     font-weight: bold;
     text-align: center;
 }
+
 div#avatar>img{
     display: none;
+}
+h1.fig-caption {
+    visibility: hidden;
 }
 /* img.logo-menu {
     display: block;
@@ -38,6 +51,7 @@ div.menu-toggler {
     cursor: pointer;
     z-index: 1000;
     transition: transform 250ms ease-out;
+    /* position: absolute; */
 }
 
 div.menu-toggler.open {
@@ -87,17 +101,19 @@ nav {
 }
 
 .active {
-    position: absolute;
+    position: fixed;
     display: block;
     background: rgb(255, 255, 255);
     width: 50%;
     left: 0;
     top: 0;
     height: 100%;
+    padding-top: 100px;
     -webkit-box-shadow: 6px 2px 5px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 6px 2px 5px 0px rgba(0,0,0,0.25);
     box-shadow: 6px 2px 5px 0px rgba(0,0,0,0.25);
 }
+
 
 ul {
     display: none;
@@ -130,6 +146,18 @@ p{
     line-height: 1.5em;
 }
 
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.5s;
+}
+.nav-link:hover::after {
+    width: 50px;    
+}
+
 .cta {
     display: block;
     color: #fff;
@@ -145,18 +173,24 @@ p{
 }
 
 /* DESKTOP SIZES */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 868px) {
     body {
         display: grid;
         grid-template-columns: 20% auto;
-        background: #eaeeef;
+        /* background: #eaeeef; */
+        /* height: calc(100%-2em) !important; */
         /* padding: 2em; */
     }
+    html {
+        background-color: #eaeeef !important;
+    }
+    
     div.menu-toggler {
         display: none;
     }
     div#aside {
         /* background: red; */
+        background-size: 70%;
         background: #fff;
         grid-template-columns: auto;
         grid-template-rows: 30% auto;
@@ -172,7 +206,8 @@ p{
         position: relative;
     }
     .scrollable {
-        overflow-y: auto;
+        overflow: auto;
+        min-height: 0; /* for Firefox*/
     }
     #avatar  {
         border-radius: 50%;
@@ -196,12 +231,21 @@ p{
     }
 
     figure {
-        margin-bottom: 50px !important;
+        /* margin-bottom: 50px !important; */
+        display: none !important;
     }
 
-    figcaption {
+    /* figcaption {
         text-align: center;
-        color: #000;       
+        color: #000;  
+        display: none;     
+    } */
+    .fig-caption {
+        visibility: visible !important;
+        text-align: center;
+        color: #000; 
+        font-size: 1.8em;
+        font-weight: 700;
     }
 
     ul {
@@ -219,9 +263,11 @@ p{
         height: 2px;
         background: #000;
         transition: width 0.5s;
+        /* margin: 0 auto; */
     }
     .nav-link:hover::after {
-        width: 50px;    
+        width: 50px;
+        /* margin: 0 auto;     */
     }
 
     nav {
@@ -240,21 +286,37 @@ p{
     }
     nav ul li a>span#big {
         font-size: 20px;
-        padding-left: 20px;
+        padding-left: 10px;
         padding-right: 10px;
-
+        /* margin: 0 auto;  */
     }
+    /* nav ul li a>span#big::after {
+        text-align: center;
+        margin: 0 auto;
+    } */
     ul.social-links li {
         display: inline;
-        padding: 0 10px 0 10px;
+        padding: 0 10px 0px 10px;
     }
+    ul.social-links {
+        padding-bottom: 50px;
+    }
+    /* div ul.social-links {
+        margin-bottom: 100px;
+    } */
     div.center-items {
         padding-top: 25px;
         text-align: center;
     }
 
-    
-
+    nav.sidebar {
+        position: sticky;
+        top: 0;
+        /* z-index: 1000; */
+        height: 100%;
+        /* text-align: center;
+        margin: 0 auto; */
+    }
     
 
 
