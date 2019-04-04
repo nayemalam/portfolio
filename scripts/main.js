@@ -11,10 +11,7 @@ console.log("Are you a developer? Let's talk!")
 // });
 
 
-// js
 
-
-//  jQuery
 $(document).ready(function () {
 
     // include aos framework
@@ -26,7 +23,7 @@ $(document).ready(function () {
     AOS.refresh();
     });
     
-    // open the menu on mobile
+    // open the menu on mobile (add .active and .open class)
     function openMenu () {
         $(this).toggleClass('open');
         $('ul, .social-links').toggleClass('active open');
@@ -46,7 +43,9 @@ $(document).ready(function () {
     $(window).resize(function () {
         var windowWidth = $(window).width();
         if(windowWidth > 868) {
-            $('ul').removeClass('active open');
+            $('ul').removeClass('active open');    
+        } if(windowWidth==868){
+            $('.menu-toggler').removeClass('open');
         }
     });
 
