@@ -40,10 +40,12 @@ $(document).ready(function () {
     });
 
     //close hamburger menu when resizing display
-    $(window).resize(function () {
+    $(window).resize(function (e) {
         var windowWidth = $(window).width();
         if(windowWidth > 868) {
-            $('ul').removeClass('active open');    
+            $('ul').removeClass('active open');
+            $('.menu-toggler').removeClass('open');
+
         } if(windowWidth==868){
             $('.menu-toggler').removeClass('open');
         }
