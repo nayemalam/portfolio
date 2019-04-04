@@ -17,7 +17,7 @@ console.log("Are you a developer? Let's talk!")
 //  jQuery
 $(document).ready(function () {
 
-
+    // include aos framework
     $(function() {
         AOS.init();
       });
@@ -26,14 +26,33 @@ $(document).ready(function () {
     AOS.refresh();
     });
     
-    $('.menu-toggler').on('click', function () {
+    // open the menu on mobile
+    function openMenu () {
         $(this).toggleClass('open');
-        $('ul').toggleClass('active open');
-    })
+        $('ul, .social-links').toggleClass('active open');
+    }
 
+    $('.menu-toggler').on('click', openMenu);
+
+    // trigger on body to close sidenav
+    $('#main').click(function() {
+        if ($('ul, .social-links').hasClass('active open') || $('.menu-toggler').hasClass('open')) {
+          $('ul, .social-links').toggleClass('active open');
+          $('.menu-toggler').toggleClass('open');
+        }
+    });
+
+    //close hamburger menu when resizing display
+    $(window).resize(function () {
+        var windowWidth = $(window).width();
+        if(windowWidth > 868) {
+            $('ul').removeClass('active open');
+        }
+    });
+
+    // add wiggle to wave emoji
     $('span#big').hover(function () {
         // $(this).attr('style', 'margin: 0 auto;');
-
         $(this).effect("shake", { times:2}, 1000);
 
     });

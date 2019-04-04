@@ -11,19 +11,28 @@ div#aside {
     color: #000; 
     display: grid;
     grid-template-columns: auto 40px;
-    padding: 2em 2em 2em 2em;
+    padding: 2em 2em 2em 2em; 
 }
 
-.on-top {
-    /* overflow: hidden; */
-    position: fixed !important;
+#on-top {
+    display: flex;
+    padding: 1em; 
+    margin-right: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    /* background: red; */
-    padding: 2em 0em 0em 0em;
-    justify-content: space-evenly;
+    z-index: 2000;
+
 }
 
+figure {
+    margin: 0 auto !important;
+}
 figcaption {
     font-size: 1.8em;
     font-weight: bold;
@@ -51,7 +60,6 @@ div.menu-toggler {
     cursor: pointer;
     z-index: 1000;
     transition: transform 250ms ease-out;
-    /* position: absolute; */
 }
 
 div.menu-toggler.open {
@@ -93,6 +101,11 @@ and vice versa for bar.end
     transform: rotate(-450deg) translateX(-0.8rem);
 }
 
+ul.active.open {
+    z-index: 1000;
+    padding-top: 50px;
+}
+
 nav {
     background: #fff;
     /* -webkit-box-shadow: 6px 2px 5px 0px rgba(0,0,0,0.25);
@@ -106,7 +119,7 @@ nav {
     background: rgb(255, 255, 255);
     width: 50%;
     left: 0;
-    top: 0;
+    /* top: 0; */
     height: 100%;
     padding-top: 100px;
     -webkit-box-shadow: 6px 2px 5px 0px rgba(0,0,0,0.25);
@@ -114,7 +127,20 @@ nav {
     box-shadow: 6px 2px 5px 0px rgba(0,0,0,0.25);
 }
 
+ul.social-links.active.open>li {
+    display: inline;
+    padding-left: 10px;
+}
 
+ul.social-links.active.open {
+    z-index: 1001;
+    height: inherit;
+    box-shadow: none;
+    padding-bottom: 20px;
+    padding-left: 1rem;
+    width: inherit;
+    top: 500px;
+}
 ul {
     display: none;
     list-style-type: none;
@@ -196,6 +222,9 @@ p{
         grid-template-rows: 30% auto;
         padding: 0;
     }
+    #on-top {
+        display: none;
+    }
     body>div#main {
         margin: 1em;
         /* background-size: 80%; */
@@ -214,7 +243,7 @@ p{
         background: #fff;
         width: 50px;
         height: 50px;
-        margin: 2em auto 1em auto;
+        margin: 1em auto 2em auto;
         
         /* padding: 3em; */
     }
@@ -299,7 +328,7 @@ p{
         padding: 0 10px 0px 10px;
     }
     ul.social-links {
-        padding-bottom: 50px;
+        padding-bottom: 25px;
     }
     /* div ul.social-links {
         margin-bottom: 100px;
@@ -317,7 +346,5 @@ p{
         /* text-align: center;
         margin: 0 auto; */
     }
-    
-
 
 }
