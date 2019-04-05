@@ -40,7 +40,7 @@ $(document).ready(function () {
     });
 
     //close hamburger menu when resizing display
-    $(window).resize(function (e) {
+    $(window).resize(function () {
         var windowWidth = $(window).width();
         if(windowWidth > 868) {
             $('ul').removeClass('active open');
