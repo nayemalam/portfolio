@@ -6,11 +6,26 @@ html {
     scroll-behavior: smooth;
 }
 
-.first-half  {
+.first-half {
     background: red;
-    height: 100%;
+    height: -webkit-fill-available;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+div.col-hover {
+    transition: all .2s ease-in-out;
+}
+div.col-hover:hover {
+    transform: scale(1.5);
+    
 }
 
 .second-half {
     background: yellow;
+    height: -webkit-fill-available;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
