@@ -1,5 +1,5 @@
 /* override index animations */
-@keyframes slideInFromRight {
+@keyframes slideInFromTop {
     0% {
       transform: translateY(-100%);
     }
@@ -8,12 +8,5 @@
     }
 }
 body>div#main {
-    margin: 1em;
-    /* background-size: 80%; */
-    background: #fff;
-    -webkit-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
-    box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
-    position: relative;
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    animation: 1s ease-out 0s 1 slideInFromTop;
 }

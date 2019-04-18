@@ -1,0 +1,16 @@
+html {
+    /* height: calc(100% - 2em); */
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', 'sans-serif' !important;
+    scroll-behavior: smooth;
+}
+
+.first-half  {
+    background: red;
+    height: 100%;
+}
+
+.second-half {
+    background: yellow;
+}
