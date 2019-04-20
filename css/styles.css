@@ -184,20 +184,6 @@ p{
     width: 50px;    
 }
 
-.cta {
-    display: block;
-    color: #fff;
-    background: #0e777f;
-    text-decoration: none;
-    padding: 8px 50px;
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    margin: 2em 0;
-
-}
-
 /* DESKTOP SIZES */
 @media only screen and (min-width: 868px) {
     body {

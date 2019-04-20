@@ -10,3 +10,10 @@
 body>div#main {
     animation: 1s ease-out 0s 1 slideInFromTop;
 }
+
+img.center-img {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

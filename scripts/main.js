@@ -17,7 +17,7 @@ $(document).ready(function () {
     // include aos framework
     $(function() {
         AOS.init();
-      });
+    });
 
     $(window).on('load', function() {
     AOS.refresh();
@@ -57,7 +57,6 @@ $(document).ready(function () {
         $(this).effect("shake", { times:2}, 1000);
 
     });
-    
     
 });
 
