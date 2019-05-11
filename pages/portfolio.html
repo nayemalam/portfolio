@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="../css/aos.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/bulma.min.css">
+        <link rel="stylesheet" href="../css/hover-min.css">
 
     </head>
     <!-- MAIN NAV -->
@@ -52,12 +53,12 @@
                 <div id="avatar"><img src="../images/favicon.png" alt="nayem-logo" class="image is-2by5"></div>
                 <h1 class="fig-caption">Nayem Alam</h1>
                 <div class="center-items">
-                    <ul class="social-links">
-                        <li><a href="https://github.com/nayemalam"><i class="fab fa-github fa-lg"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/nayemalam/"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-                        <li><a href="https://www.instagram.com/nayem_wizdom/"><i class="fab fa-instagram fa-lg"></i></a></li>
-                        <li><a href="https://twitter.com/nayem_wizdom"><i class="fab fa-twitter fa-lg"></i></a></li>
-                    </ul>
+                  <ul class="social-links">
+                      <li><a class="hvr-bounce-in" href="https://github.com/nayemalam"><i class="fab fa-github fa-lg"></i></a></li>
+                      <li><a class="hvr-bounce-in" href="https://www.linkedin.com/in/nayemalam/"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                      <li><a class="hvr-bounce-in" href="https://www.instagram.com/nayem_wizdom/"><i class="fab fa-instagram fa-lg"></i></a></li>
+                      <li><a class="hvr-bounce-in" href="mailto:nayem.alam@mail.mcgill.ca?subject=Hey Nayem! | From Website"><i class="fas fa-paper-plane"></i></a></li>
+                  </ul>
                 </div>
                 <ul> 
                     <li><a href="../index.html" class="nav-link">Home</a></li>
@@ -71,8 +72,8 @@
             
         </div>
         <!-- MAIN CONTENT AREA -->
-        <div id="main" class="content">
-            <h3>Here's what I've been cooking up ...</h3>       
+        <div id="main-portfolio" class="content">
+            <h3 style="padding-top: 15px;" id="portfolio-header"></h3>       
             
             <div class="tile is-ancestor">
                     <div class="tile is-vertical is-8">
@@ -121,7 +122,7 @@
                   </div>
             <button class="button is-info" data-aos='flip-up'>Hello</button>
 
-   
+            <h1>HELLO</h1><h1>HELLO</h1><h1>HELLO</h1><h1>HELLO</h1><h1>HELLO</h1>
         </div>
     </body>
     <!-- SCRIPTS -->
@@ -132,10 +133,17 @@
     crossorigin="anonymous"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/aos.js"></script>
-
-    
-
-    
-    
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+    <script>
+      // TypeIt main
+      new TypeIt('#portfolio-header', {
+         strings: ['Coffee Nights & Curiosity ...'],
+         speed: 80,
+         cursor: false,
+         breakLines: false,
+         lifeLike: true,
+         waitUntilVisible: true
+       }).go();
+    </script>
 
 </html>
