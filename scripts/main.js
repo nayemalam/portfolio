@@ -64,13 +64,19 @@ $(document).ready(function () {
     // Flashy Titles for Home Page
     function showNextTitle() {
         ++titleIndex;
+        if(titleIndex < titles.length -1) {
         titles.eq(titleIndex % titles.length)
             .fadeIn(2000)
             .delay(10)
             .fadeOut(2000, showNextTitle);
+            
+        }
+        else if(titleIndex < titles.length) {
+        titles.eq(titleIndex % titles.length).fadeIn(2000);
+        }
     }
-    
     showNextTitle();
+
     
 });
 

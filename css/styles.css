@@ -171,13 +171,10 @@ div#main.content {
 div#main.content>h1 {
     color: #fff;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', 'sans-serif';
+    font-weight: 900;
 }
 
-div#main.content>button.btn {
-    color: red;
-    border: 1px solid;
-}
 /* div#main.content {
     height: inherit;
     background-color: #090907;
@@ -219,6 +216,29 @@ h1#waddup {
 h1.pad-top-32 {
     padding-top: 32px;
 }
+
+div.test {
+    display: grid;
+    text-align: center;
+    padding-top: 5em;
+}
+
+
+.btn {
+    color: white;
+    display: block;
+    font-size: 14px;
+    border: 2px solid #ff7675;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    transition: 1s all ease;
+}
+
+a.pad-top-mobile {
+    margin-top: 2em;
+}
+
+
 
 /* DESKTOP SIZES */
 @media only screen and (min-width: 868px) {
@@ -392,6 +412,35 @@ h1.pad-top-32 {
    
     #load {
         position: absolute;
+    }
+
+    div.test {
+        margin-top: 22em;
+        display: flow-root;
+        padding-top: 0;
+    }
+
+    a.pad-top-mobile {
+        margin-top: 0;
+    } 
+
+    .btn {
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 14px;
+        border: 2px solid #ff7675;
+        padding: 14px 60px;
+        text-transform: uppercase;
+        transition: 1s all ease;
+    }
+
+    .hvr-bounce-to-right::before {
+        background: #ff7675 !important;
+    }
+
+    .hvr-bounce-to-left::before {
+        background: #ff7675 !important;
     }
 
     /* Include page loader */
