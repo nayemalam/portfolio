@@ -228,7 +228,7 @@ div.test {
     color: white;
     display: block;
     font-size: 14px;
-    border: 2px solid #ff7675;
+    border: 2px solid #43C6AC;
     padding: 14px 60px;
     text-transform: uppercase;
     transition: 1s all ease;
@@ -429,19 +429,24 @@ a.pad-top-mobile {
         display: block;
         color: white;
         font-size: 14px;
-        border: 2px solid #ff7675;
+        border: 2px solid #43C6AC;
         padding: 14px 60px;
         text-transform: uppercase;
         transition: 1s all ease;
     }
 
     .hvr-bounce-to-right::before {
-        background: #ff7675 !important;
+        background: linear-gradient(to right, #43C6AC, #191654) !important;
     }
 
     .hvr-bounce-to-left::before {
-        background: #ff7675 !important;
+        background: linear-gradient(to right, #43C6AC, #191654) !important;
     }
+
+    div#particles-js {
+        position: fixed;
+    }
+    
 
     /* Include page loader */
    
