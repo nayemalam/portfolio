@@ -75,7 +75,9 @@ $(document).ready(function () {
         titles.eq(titleIndex % titles.length).fadeIn(2000);
         }
     }
-    showNextTitle();    
+    showNextTitle();
+    
+    
     
     
 });

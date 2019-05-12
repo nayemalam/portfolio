@@ -73,56 +73,52 @@
         </div>
         <!-- MAIN CONTENT AREA -->
         <div id="main-portfolio" class="content">
-            <h3 style="padding-top: 15px;" id="portfolio-header"></h3>       
+            <h3 style="padding-top: 15px;" id="portfolio-header" class="underline"></h3>    
             
-            <div class="tile is-ancestor">
-                    <div class="tile is-vertical is-8">
-                      <div class="tile">
-                        <div class="tile is-parent is-vertical">
-                          <article class="tile is-child notification is-primary">
-                            <p class="title">Vertical...</p>
-                            <p class="subtitle">Top tile</p>
-                          </article>
-                          <article class="tile is-child notification is-warning">
-                            <p class="title">...tiles</p>
-                            <p class="subtitle">Bottom tile</p>
-                          </article>
-                        </div>
-                        <div class="tile is-parent">
-                          <article class="tile is-child notification is-info">
-                            <p class="title">Middle tile</p>
-                            <p class="subtitle">With an image</p>
-                            <figure class="image is-4by3 imghvr-stack-up">
-                              <img src="../images/ted-x.jpg">
-                            </figure>
-                          </article>
-                        </div>
-                      </div>
-                      <div class="tile is-parent">
-                        <article class="tile is-child notification is-danger">
-                          <p class="title">Wide tile</p>
-                          <p class="subtitle">Aligned with the right tile</p>
-                          <div class="content">
-                            <!-- Content -->
-                          </div>
-                        </article>
-                      </div>
-                    </div>
-                    <div class="tile is-parent">
-                      <article class="tile is-child notification is-success">
-                        <div class="content">
-                          <p class="title">Tall tile</p>
-                          <p class="subtitle">With even more content</p>
-                          <div class="content">
-                            <!-- Content -->
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  </div>
-            <button class="button is-info" data-aos='flip-up'>Hello</button>
+            <!-- Filterable layout - isotope js + https://www.youtube.com/channel/UC9XRkmyEN8kH2Q4LgLsZ2fw -->
+            <div class="container">
+              <div class="columns is-mobile">
+                  <div class="column is-full">
+                    <ol class="filters text-center">
+                        <li class="active" data-filter="*"><a href="#!">All</a></li>
+                        <li data-filter=".html"><a href="#!">HTML</a></li>
+                        <li data-filter=".css"><a href="#!">CSS</a></li>
+                        <li data-filter=".javascript"><a href="#!">Javascript</a></li>
+                    </ol>
 
-            <h1>HELLO</h1><h1>HELLO</h1><h1>HELLO</h1><h1>HELLO</h1><h1>HELLO</h1>
+                    <div class="projects">
+                        <div class="columns is-mobile">
+                            <div class="column is-one-quarter item html">
+
+                                <div class="card">
+                                    <div class="card-head">
+                                        <img src="../images/hi-logo.png" alt="" class="img-fluid card-img">
+                                        <div class="card-overlay"><h2>HTML</h2></div>
+                                        <div class="card-hover">
+                                            <h2>Lorem, ipsum.</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="card-body text-center">
+                                        <h4 class="title">HTML</h4>
+                                        <a href="#!" class="btn btn-lg card-btn">See More</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                      
+                  </div>
+              
+
+              </div>
+            </div>
+           
+            <!-- <button class="button is-info" data-aos='flip-up'>Hello</button> -->
+
         </div>
     </body>
     <!-- SCRIPTS -->
@@ -134,6 +130,9 @@
     <script src="../scripts/main.js"></script>
     <script src="../scripts/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="../scripts/portfolio.js"></script>
+
     <script>
       // TypeIt main
       new TypeIt('#portfolio-header', {
