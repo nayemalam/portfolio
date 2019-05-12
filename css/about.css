@@ -7,8 +7,35 @@
       transform: translateY(0);
     }
 }
+
+@keyframes shadow {
+  from {
+    text-shadow: 0 0 10px transparent;
+  }
+  to {
+    text-shadow: 0 28px 50px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+}
+
 body>div#main-about {
     animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+
+.columns.is-mobile {
+  display: block !important;
 }
 
 img.center-img {
@@ -29,6 +56,47 @@ div#main-about {
   padding: 1em 2em;
   height: calc(100% - 2em);
 }
+/* Creds to https://codepen.io/asistapl/ for text-shadow effect */
+h3.shake-text {
+  letter-spacing: -0.07ex;
+  animation: shadow 1.5s infinite alternate ease-in-out;
+}
+.card{
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height: 310px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+.card .imgBx{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s;
+  z-index: 1;
+}
+.column {
+  display: table-footer-group !important;
+}
+
+.underline {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+  text-shadow:
+    2px 2px white,
+    2px -2px white,
+    -2px 2px white,
+    -2px -2px white;
+}
+
+
+
 
 @media only screen and (min-width: 868px) {
   body>div#main-about {
@@ -37,5 +105,36 @@ div#main-about {
     -moz-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
     box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
   }
+
+  img.center-img {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .columns.is-mobile {
+    display: flex !important;
+  }
+  .card{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 310px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  .card .imgBx{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.5s;
+    z-index: 1;
+  }
+ 
+ 
+
 
 }
