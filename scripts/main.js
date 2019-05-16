@@ -58,24 +58,35 @@ $(document).ready(function () {
 
     });
 
-    var titles = $(".title-na");
-    var titleIndex = -1;
     
     // Flashy Titles for Home Page
+    var titles = $(".title-na");
+    var titleIndex = -1;
+ 
     function showNextTitle() {
         ++titleIndex;
-        if(titleIndex < titles.length -1) {
         titles.eq(titleIndex % titles.length)
-            .fadeIn(2000)
-            .delay(10)
-            .fadeOut(2000, showNextTitle);
-            
-        }
-        else if(titleIndex < titles.length) {
-        titles.eq(titleIndex % titles.length).fadeIn(2000);
-        }
+        .fadeIn(2000)
+        .delay(10)
+        .fadeOut(2000, showNextTitle);
     }
+    
     showNextTitle();
+      
+    // function showNextTitle() {
+    //     ++titleIndex;
+    //     if(titleIndex < titles.length -1) {
+    //     titles.eq(titleIndex % titles.length)
+    //         .fadeIn(2000)
+    //         .delay(10)
+    //         .fadeOut(2000, showNextTitle);
+            
+    //     }
+    //     else if(titleIndex < titles.length) {
+    //     titles.eq(titleIndex % titles.length).fadeIn(2000);
+    //     }
+    // }
+    // showNextTitle();
     
     
     
