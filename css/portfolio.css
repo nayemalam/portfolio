@@ -174,7 +174,11 @@ h4.title{
 }
 
 div.column.column.is-one-quarter.item.html {
-  position: inherit;
+  position: initial !important;
+}
+
+div.column.column.is-one-quarter.item.css {
+  position: initial !important;
 }
 @media only screen and (min-width: 868px) {
   body>div#main-portfolio {
