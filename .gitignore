@@ -1,5 +1,13 @@
 .DS_Store
 images/
+css/landing.css
+css/bulma-timeline.min.css
+scripts/aos.js
+scripts/particles.min.js
+scripts/portfolio.js
+scripts/about.js
+
+
 
 
 
