@@ -180,6 +180,23 @@ div.column.column.is-one-quarter.item.html {
 div.column.column.is-one-quarter.item.css {
   position: initial !important;
 }
+
+div.column.column.is-one-quarter.item.javascript {
+  position: initial !important;
+}
+
+.columns.is-mobile {
+  display: contents !important;
+}
+
+.columns.is-mobile>.column.is-one-quarter {
+  width: auto !important;
+}
+
+.content h3 {
+  font-size: 1.4em !important;
+}
+
 @media only screen and (min-width: 868px) {
   body>div#main-portfolio {
     margin: 1em;
@@ -201,13 +218,27 @@ div.column.column.is-one-quarter.item.css {
   }
 
   .content ol {
-    margin-left: -3em !important;
+    margin-left: -5em !important;
   }
 
   .columns.is-mobile>.column.is-one-quarter {
     flex: none !important;
     margin-right: 0;
   }
+
+  .columns.is-mobile {
+    display: flex !important;
+  }
+
+  .columns.is-mobile>.column.is-one-quarter {
+    width: 25% !important;
+  }
+
+  div.columns.is-mobile {
+    margin-left: 1em;
+  }
+
+  
 
 }
 

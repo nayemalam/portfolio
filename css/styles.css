@@ -211,10 +211,13 @@ h1#waddup {
 
 .title-na {
     display: none;
+    font-family: 'IBM Plex Sans', sans-serif !important;
+    letter-spacing: 5px;
+
 }
 
 h1.pad-top-32 {
-    padding-top: 32px;
+    padding-top: 4em;
 }
 
 div.test {
