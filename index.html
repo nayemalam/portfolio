@@ -44,6 +44,7 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/bulma.min.css">
         <link rel="stylesheet" href="./css/hover-min.css">
+        <link rel="stylesheet" href="./css/lity.min.css">
         
     </head>
 
@@ -90,10 +91,14 @@
         <div id="testing" style="position: absolute;"></div>
         <div id="main" class="content">
             
-            <h1 class="title-na pad-top-32">Designer.</h1>
+            <h1 class="title-na pad-32-top">Designer.</h1>
             <h1 class="title-na">Developer.</h1>
             <h1 class="title-na">Speaker.</h1>
-            <div id="particles-js"></div>
+
+    
+            <div id="fade" onClick="lightbox_close();"></div>
+            <div id="particles-js" class="play"><a href="//https://www.youtube.com/embed/YWba-iXlF80?autoplay=1" class="btn-center hvr-radial-out" data-lity><i class="fab fa-google-play fa-lg"></i></a></div>
+            
                 
             <div class='test'>
                 <div style='float: left;'>
@@ -104,7 +109,6 @@
                 </div>
             </div>
 
-
         </div>
     </body>
     <!-- SCRIPTS -->
@@ -114,6 +118,7 @@
     <script src="./scripts/main.js"></script>
     <script src="./scripts/aos.js"></script>
     <script src="./scripts/particles.min.js "></script>
+    <script src="scripts/lity.min.js"></script>
     <script>
         /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
         particlesJS.load('particles-js', './assets/particles.json', function() {
