@@ -1,0 +1,33 @@
+body>div#main-media {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  
+  body>div#main-media {
+    /* background-size: 80%; */
+    background: #fff;
+    position: relative;
+    /* animation: 1s ease-out 0s 1 slideInFromRight; */
+  }
+  
+  div#main-media {
+    padding: 5em 2em;
+    height: calc(100% - 2em);
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  div.columns {
+      text-align: center;
+  }
+
+@media only screen and (min-width: 868px) {
+    body>div#main-media {
+      margin: 1em;
+      padding: 0;
+      -webkit-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
+      box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
+    }
+}
