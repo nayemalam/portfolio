@@ -1,5 +1,15 @@
+/* override index animations */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 body>div#main-media {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    animation: 1s ease-out 0s 1 slideInFromBottom;
   }
   
   body>div#main-media {
@@ -22,6 +32,32 @@ body>div#main-media {
       text-align: center;
   }
 
+  .img {
+    padding-top: 100px;
+  }
+
+  .neg-margin-top {
+    margin-top: -150px;
+
+  }
+
+  .pad-top-left {
+    margin-top: -2em;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .underline {
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85;
+    text-shadow:
+      2px 2px white,
+      2px -2px white,
+      -2px 2px white,
+      -2px -2px white;
+  }
+
+
 @media only screen and (min-width: 868px) {
     body>div#main-media {
       margin: 1em;
@@ -29,5 +65,19 @@ body>div#main-media {
       -webkit-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
       -moz-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
       box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
+    }
+    .img {
+      padding: 20px;
+    }
+
+    .neg-margin-top {
+      margin-top: 0;
+  
+    }
+    .pad-top-left {
+      padding-top: 30px;
+      margin-left: 30px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
 }

@@ -37,10 +37,9 @@
         <div id="aside">
             <div id="on-top">
             <figure>
-                
-                <!-- <div id="avatar"><img src="./images/na-logo.png" alt="na-logo" class="image is-5by3"></div> -->
-            <figcaption>Nayem Alam</figcaption>
-                
+                <a style="color: #000;" href="../index.html">
+                    <figcaption>Nayem Alam</figcaption>
+                </a>
             </figure>
             <div class="menu-toggler">
                 <div class="bar half start"></div>
@@ -50,8 +49,10 @@
             </div>
 
             <nav class="sidebar"> 
-                <div id="avatar"><img src="../images/favicon.png" alt="nayem-logo" class="image is-2by5"></div>
-                <h1 class="fig-caption">Nayem Alam</h1>
+                <a href="../index.html">
+                    <div id="avatar"><img src="../images/favicon.png" alt="nayem-logo" class="image is-2by5"></div>
+                    <h1 class="fig-caption">Nayem Alam</h1>
+                </a>
                 <div class="center-items">
                     <ul class="social-links">
                         <li><a class="hvr-bounce-in" href="https://github.com/nayemalam"><i class="fab fa-github fa-lg"></i></a></li>
@@ -74,24 +75,101 @@
         <!-- MAIN CONTENT AREA -->
         <!-- <div style="position: absolute;"><h1>Hello</h1></div> -->
         <div id="main-media" class="content">
+            <h3 id="media-header" class="underline pad-top-left"></h3> 
+            <!-- First Column -->
             <div class="columns" style="padding-top: 3em;">
-                <div class="column">
+                <div class="column" data-aos="fade">
                     <a href="#">
-                        <img class="hvr-bounce-in lozad" data-src="../images/location.png" alt=""/>
+                        <img class="img hvr-bounce-in lozad neg-margin-top" data-src="../images/mentions/T20.png" alt=""/>
                     </a>
                 </div>
-                <div class="column">
+                <div class="column" data-aos="fade">
                     <a href="#">
-                        <img class="hvr-bounce-in lozad" data-src="../images/loc.png" alt=""/>
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/ctv.png" alt=""/>
                     </a>
                 </div>
-                <div class="column">
-                    Third column
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                            <img class="img hvr-bounce-in lozad" data-src="../images/mentions/danielbielak.png" alt=""/>
+                    </a>
                 </div>
-                <div class="column">
-                    Fourth column
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                            <img class="img hvr-bounce-in lozad" data-src="../images/mentions/vanier.png" alt=""/>
+                    </a>
                 </div>
             </div>
+            <!-- Second Column -->
+            <div class="columns" style="padding-top: 3em;">
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/literacytoday.png" alt="" style="padding-top: 40px;"/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/tedx_mcgill.png" alt="" style="padding-top: 30px;"/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/tedx_mario.png" alt=""/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/tyndale.jpg" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <!-- Third Column -->
+            <div class="columns" style="padding-top: 3em;">
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/global.png" alt=""/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/youeffect.png" alt=""/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/nstar.png" alt=""/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/emsb-logo.png" alt="" style="padding-top: 40px;"/>
+                    </a>
+                </div>
+            </div>
+            <!-- Fourth Column -->
+            <div class="columns" style="padding-top: 3em;">
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/514-mag.png" alt="" style="padding-top: 80px;"/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/sca.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/v-insider.png" alt=""/>
+                    </a>
+                </div>
+                <div class="column" data-aos="fade">
+                    <a href="#">
+                        <img class="img hvr-bounce-in lozad" data-src="../images/mentions/marymount-logo.jpg" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div style="margin-bottom: 150px;"></div>
+            
         </div>
     </body>
     <!-- SCRIPTS -->
@@ -102,7 +180,19 @@
     crossorigin="anonymous"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+    // TypeIt main
+    new TypeIt('#media-header', {
+        strings: ['Grateful to have been a part of amazing media!'],
+        speed: 80,
+        cursor: false,
+        breakLines: false,
+        lifeLike: true,
+        waitUntilVisible: true
+        }).go();
+    </script>
     <script>
         const observer = lozad(); // lazy loads elements with default selector as '.lozad'
         observer.observe();
