@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>About | Nayem Alam</title>
+        <title>Hey! | Nayem Alam</title>
 
         <!-- Facebook and Twitter integration -->
         <meta property="og:title" content=""/>
@@ -22,14 +22,13 @@
         <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
         <!-- Stylesheets -->
         <link rel="stylesheet" href="../css/styles.css">
-        <link rel="stylesheet" href="../css/about.css">
+        <link rel="stylesheet" href="../css/contact.css">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <!-- Externals -->
         <link rel="stylesheet" href="../css/aos.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/bulma.min.css">
-        <link rel="stylesheet" href="../css/bulma-timeline.min.css">
         <link rel="stylesheet" href="../css/hover-min.css">
 
     </head>
@@ -75,63 +74,58 @@
         </div>
         <!-- MAIN CONTENT AREA -->
         <!-- <div style="position: absolute;"><h1>Hello</h1></div> -->
-        <div id="main-about" class="content">
-            <h3 style="padding-top: 15px;" class="underline fade-in">Profile</h3> 
-
-            <div class="columns is-mobile is-centered is-vcentered">
-                <div class="column">
-                    <span class="subtitle desc">
-                            [filler text] <br>I have always been an achiever; be it academics or professional life or sports or any other field in my life. I believe in success through hard work & dedication. My motto in life is to ‘If you want something, work hard & you will achieve it; there are no shot cuts’. I enjoy life to the fullest & love humour. I am a progressive thinker & respect each person’s space & values.
+        <div id="main-contact" class="content">    
+            <h3 class="underline pad-top-left">Don't hesitate to get in touch!</h3>      
+            <form id="contactform" class="center" action="//formspree.io/nayemalam@hotmail.com" method="POST">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Your name (required)" required>
+                    </div>
+                </div>
+                
+                <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" name="_replyto" placeholder="Your email (required)" required>
+                    <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
                     </span>
-                    <br>
-                    <button class="button is-info" data-aos='flip-up'>Hello</button>
+                    
                 </div>
-                <div class="column">
-                    <div class="card" data-tilt>
-                        <div class="imgBx">
-                                <img class="lozad" data-src="../images/blue-suit.png" alt="suited-photo">
-                        </div>
+                </div>
+                
+                <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <div class="select">
+                    <select name="_subject">
+                        <option>Hire me to speak</option>
+                        <option>Need a website</option>
+                        <option>Coffee</option>
+                        <option>Other</option>
+                    </select>
                     </div>
                 </div>
-            </div>
+                </div>
+                
+                <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                </div>
+                </div>
+                
+                <div class="field is-grouped">
+                <div class="control">
+                    <input class="button is-primary hvr-bounce-in" type="submit" value="Send">
+                    <!-- <input type="hidden" name="_next" value="://127.0.0.1:5500/pages/thanks.html"/> -->
+                </div>
+                </div>
+            </form>
 
-            <div class="timeline is-centered" style="padding-top: 32px; padding-bottom: 64px;">
-                <header class="timeline-header">
-                    <span class="tag is-medium is-primary">Start</span>
-                </header>
-                <div class="timeline-item is-primary">
-                    <div class="timeline-marker is-primary"></div>
-                    <div class="timeline-content" data-aos="fade-down-left">
-                    <p class="heading">January 2016</p>
-                    <p>Timeline content - Can include any HTML element</p>
-                    </div>
-                </div>
-                <div class="timeline-item is-warning">
-                    <div class="timeline-marker is-warning is-image is-32x32">
-                    <img src="http://bulma.io/images/placeholders/32x32.png">
-                    </div>
-                    <div class="timeline-content" data-aos="fade">
-                    <p class="heading">February 2016</p>
-                    <p>Timeline content - Can include any HTML element</p>
-                    </div>
-                </div>
-                <header class="timeline-header">
-                    <span class="tag is-primary">2017</span>
-                </header>
-                <div class="timeline-item is-danger">
-                    <div class="timeline-marker is-danger is-icon">
-                    <i class="fa fa-flag"></i>
-                    </div>
-                    <div class="timeline-content" data-aos="fade">
-                    <p class="heading">March 2017</p>
-                    <p>Timeline content - Can include any HTML element</p>
-                    </div>
-                </div>
-                <header class="timeline-header">
-                    <span class="tag is-medium is-primary">End</span>
-                </header>
-            </div>
-   
+
+            <h6 class="subtitle is-5 centerize" id="message"></h6>
         </div>
     </body>
     <!-- SCRIPTS -->
@@ -141,13 +135,19 @@
     integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
     crossorigin="anonymous"></script>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/about.js"></script>
     <script src="../scripts/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
     <script>
-        const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-        observer.observe();
+    // TypeIt main
+    new TypeIt('#message', {
+        strings: ['I promise to get back to you within 24 hrs.'],
+        speed: 80,
+        cursor: false,
+        breakLines: false,
+        lifeLike: true,
+        waitUntilVisible: true
+        }).go();
     </script>
+ 
 
 </html>
