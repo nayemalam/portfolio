@@ -243,7 +243,6 @@ div.test {
 
 .btn-center {
     position: absolute;
-    top: 20%;
     left: 70%;
     margin-top: 5em;
     transform: translate(-50%, -50%);
@@ -476,9 +475,7 @@ a.pad-top-mobile {
     }
 
     .btn-center {
-        position: absolute;
-        top: 20%;
-        left: 65%;
+        position: absolute !important;
         margin-top: 0;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
