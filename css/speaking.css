@@ -46,24 +46,97 @@
           2px -2px white,
           -2px 2px white,
           -2px -2px white;
+      } 
+
+      /* Main vid */
+      .vid-container {
+        position: relative;
+        padding-bottom: 52%;
+        margin-top: 60px; 
+        height: 0; 
+      }
+      
+      .vid-container iframe,
+      .vid-container object,
+      .vid-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
 
-      #playlist li{
+      .vid-list-container {
+        width: 92%;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-left:4%;
+        padding-bottom: 20px;
+      }
+      
+      .vid-list {
+        width: 1344px;
+        position: relative;
+        top:0;
+        left: 0;
+      }
+      
+
+      .vid-item {
+        display: block;
+        width: 148px;
+        height: 148px;
+        float: left;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .thumb {
+        overflow:hidden;
+        height: 84px;
+      }
+
+      .thumb img {
+        width: 100%;
+        position: relative;
+        top: -13px;
         cursor: pointer;
-        padding: 8px;
-        text-align: center;
-        list-style-type: none;
-    }
+      }
 
-    #mainvid {
-      height:480px;
-      margin: 4em auto 0 auto;   
-      border:1px solid silver;
-      /* padding-top: 1px; */
-      /* position: absolute; */
-  }
-
-   
+      .vid-item .desc {
+        color: #21A1D2;
+        font-size: 15px;
+        margin-top:5px;
+        cursor: pointer;
+      }
+      /* Arrows */
+      .arrows {
+        position:relative;
+        width: 96px;
+        margin: 0 auto;
+      }
+      
+      .arrow-left {
+        color: #fff;
+        position: absolute;
+        background: #777;
+        padding: 15px;
+        left: 0;
+        top: -20px;
+        z-index: 99;
+        cursor: pointer;
+      }
+      
+      .arrow-right {
+        color: #fff;
+        position: absolute;
+        background: #777;
+        padding: 15px;
+        right: 0;
+        top: -20px;
+        z-index:100;
+        cursor: pointer;
+      }
 
     @media only screen and (min-width: 868px) {
         body>div#main-speak {
@@ -77,24 +150,36 @@
           position: absolute;
         }
 
-        /* Video playlist */
-        #playlist {
-          display: flex;
-        }
-        #playlist li{
-            cursor:pointer;
-            padding:8px;
-            margin: 0 auto;
-            list-style-type: none;
+        /* Arrows */
+        .arrows {
+          position:relative;
+          width: 100%;
+          top: 10em;
         }
         
-        #playlist li:hover{
-            color:blue;                        
+        .arrow-left {
+          color: #fff;
+          position: absolute;
+          background: #777;
+          padding: 15px;
+          left: -25px;
+          top: -130px;
+          z-index: 99;
+          cursor: pointer;
         }
-        #mainvid {
-            height:480px;
-            margin: 4em auto 0 auto;   
-            border:1px solid silver;
-            /* position: absolute; */
+        
+        .arrow-right {
+          color: #fff;
+          position: absolute;
+          background: #777;
+          padding: 15px;
+          right: -25px;
+          top: -130px;
+          z-index:100;
+          cursor: pointer;
         }
+
+        
+
+        
     }
