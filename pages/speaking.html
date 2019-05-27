@@ -87,7 +87,7 @@
                 <iframe id="vid_frame" src="" width="560" height="315" frameborder="0"></iframe>
             </div>
             <!-- Playlist -->
-            <div class="vid-item" onClick="document.getElementById('vid_frame').src='../images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4'">
+            <div class="vid-item" onClick="document.getElementById('vid_frame').src='../images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4';">
                 <div class="thumb hvr-pulse-grow">
                     <img src="../images/weday.jpg">
                 </div>
@@ -113,9 +113,7 @@
             </div>
 
             <div style="margin-bottom: 250px;"></div>
-            <p style="padding-bottom: 30px; text-align: center; font-size: 10px;"> <b>Note:</b> You have to click on the <i><u>play</u></i> button before playing any playlist videos.</p>
-
-            
+            <!-- <p style="padding-bottom: 30px; text-align: center; font-size: 10px;"> <b>Note:</b> You have to click on the <i><u>play</u></i> button before playing any playlist videos.</p> -->
 
         </div>
     </body>
@@ -159,6 +157,11 @@
                 document.getElementById("displayDiv").style.display = "block";
                 ev.preventDefault();
             });
+            $('.vid-item').click('click', function(ev) {
+                $('.hidden-div').hide();
+                document.getElementById('displayDiv').style.display = 'block';
+                e.preventDefault();
+            })
         });
     </script>
   
