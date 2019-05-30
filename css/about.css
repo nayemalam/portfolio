@@ -94,12 +94,23 @@ h3.shake-text {
     -2px 2px white,
     -2px -2px white;
 }
-
+.center-emoji-effect {
+  text-align: center;
+  margin-top: -0.1em !important;
+}
 /* div.columns.is-mobile.is-centered.is-vcentered {
   margin-left: 3em !important;
 } */
 
+.is-mobile-2 {
+  text-align: -webkit-center;
+  padding-top: 20px;
+}
 
+.is-centered2 {
+  display: table !important;
+  margin: 0 auto;
+}
 
 @media only screen and (min-width: 868px) {
   body>div#main-about {
@@ -136,8 +147,5 @@ h3.shake-text {
     transition: 0.5s;
     z-index: 1;
   }
- 
- 
-
 
 }
