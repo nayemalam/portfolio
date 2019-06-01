@@ -74,7 +74,7 @@
         </div>
         <!-- MAIN CONTENT AREA -->
         <div id="main-portfolio" class="content">
-            <i><h3 style="padding-top: 15px;" id="portfolio-header" class="underline"></h3></i>
+            <h3 style="padding-top: 15px;" class="underline fade-in"><i>coffee nights & curiosity ...</i> ♨️</h3>
             
             <!-- Filterable layout - isotope js -->
             <div class="container">
@@ -82,61 +82,51 @@
                   <div class="column is-full">
                     <ol class="filters text-center">
                         <li class="active" data-filter="*"><a href="#!">All</a></li>
-                        <li data-filter=".html"><a href="#!">HTML</a></li>
-                        <li data-filter=".css"><a href="#!">CSS</a></li>
-                        <li data-filter=".javascript"><a href="#!">Javascript</a></li>
+                        <li data-filter=".sites"><a href="#!">Sites</a></li>
+                        <li data-filter=".academic"><a href="#!">Academic</a></li>
+                        <li data-filter=".personal"><a href="#!">Personal</a></li>
                     </ol>
 
                     <div class="projects">
                         <div class="columns is-mobile">
 
-                            <div class="column is-one-quarter item html">
+                            <div class="column is-one-quarter item sites">
                                 <div class="card">
                                     <div class="card-head">
-                                        <img src="../images/hi-logo.png" alt="" class="img-fluid card-img">
-                                        <div class="card-overlay"><h2>HTML</h2></div>
-                                        <div class="card-hover">
-                                            <h2>Lorem, ipsum.</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
-                                        </div>
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="title">HTML</h4>
-                                        <a href="#!" class="btn btn-lg card-btn">See More</a>
+                                        <img src="../images/portfolio/istrive.png" alt="" class="img-fluid card-img lozad">
+                                        <div class="card-overlay"><h2 class="header">Client</h2></div>
+                                        <a href="../index.html" target="_blank">
+                                            <div class="card-hover">
+                                                <h2>IStrive</h2>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="column is-one-quarter item css">
+                            <div class="column is-one-quarter item academic">
                                 <div class="card">
                                     <div class="card-head">
-                                        <img src="../images/hi-logo.png" alt="" class="img-fluid card-img">
-                                        <div class="card-overlay"><h2>CSS</h2></div>
+                                        <img src="../images/hi-logo.png" alt="" class="img-fluid card-img lozad">
+                                        <div class="card-overlay"><h2 class="header">Academic</h2></div>
                                         <div class="card-hover">
                                             <h2>Lorem, ipsum.</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
                                         </div>
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="title">CSS</h4>
-                                        <a href="#!" class="btn btn-lg card-btn">See More</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="column is-one-quarter item javascript">
+                            <div class="column is-one-quarter item personal">
                                 <div class="card">
                                     <div class="card-head">
-                                        <img src="../images/hi-logo.png" alt="" class="img-fluid card-img">
-                                        <div class="card-overlay"><h2>JS</h2></div>
+                                        <img src="../images/hi-logo.png" alt="" class="img-fluid card-img lozad">
+                                        <div class="card-overlay"><h2 class="header">Personal</h2></div>
                                         <div class="card-hover">
                                             <h2>Lorem, ipsum.</h2>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo repudiandae eaque maiores provident deserunt.</p>
                                         </div>
-                                    </div>
-                                    <div class="card-body text-center">
-                                        <h4 class="title">JS</h4>
-                                        <a href="#!" class="btn btn-lg card-btn">See More</a>
                                     </div>
                                 </div>
                             </div>
@@ -163,21 +153,13 @@
     crossorigin="anonymous"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="../scripts/portfolio.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script>
-      // TypeIt main
-      new TypeIt('#portfolio-header', {
-         strings: ['coffee nights & curiosity ...'],
-         speed: 80,
-         cursor: false,
-         breakLines: false,
-         lifeLike: true,
-         waitUntilVisible: true
-       }).go();
+        const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+        observer.observe();
     </script>
 
 </html>

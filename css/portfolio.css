@@ -24,7 +24,7 @@ div#main-portfolio {
 }
 
 .container {
-  position: absolute !important;
+  position: relative;
 }
 
 .underline {
@@ -80,6 +80,7 @@ li.active {
   border: 1px solid #eee;
   background-color: #fff;
   box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+  cursor: pointer;
 }
 
 .card-head{
@@ -94,7 +95,7 @@ li.active {
   width: 100%;
   height: 100%;
   z-index: 9;
-  background-color: rgba(67,78,94,0.8);
+  background-color: rgba(0, 0, 0, 0.425);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,31 +127,11 @@ li.active {
   transition: ease-in-out 0.2s;
 }
 
-.card-body{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 h4.title{
   color: #434e5e;
   font-size: 1.2rem;
   margin-bottom: 0;
   text-align: center;
-}
-
-.card-btn{
-  margin-bottom: -40px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #fff;
-  color: #222;
-  border: 1px solid #eee;
-  border-radius: 50px;
-}
-
-.card-btn:hover{
-  background-color: #28bea8;
-  color: #fff;
 }
 
 .content ol {
@@ -197,12 +178,45 @@ div.column.column.is-one-quarter.item.javascript {
   font-size: 1.4em !important;
 }
 
+.header {
+  color: white !important;
+  display: none;
+}
+
+.card-hover>p {
+  display: none;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+}
+
 @media only screen and (min-width: 868px) {
   body>div#main-portfolio {
     margin: 1em;
     -webkit-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
     box-shadow: -2px 2px 11px 0px rgba(0,0,0,0.25);
+  }
+  .card-hover>p {
+    display: flex;
+  }
+
+  .container {
+    position: absolute !important;
+  }
+  
+  .header {
+    display: flex;
   }
 
   .btn {
@@ -238,26 +252,26 @@ div.column.column.is-one-quarter.item.javascript {
     margin-left: 1em;
   }
 
-  
-
 }
 
 @media only screen and (max-width: 570px) {
-  a.btn.btn-lg.card-btn {
-    position: relative;
-    display: block;
-    font-size: 14px;
-    /* border: 2px solid #000; */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 14px 0 14px 0;
-    transition: 1s all ease;
-    text-align: center;
-  }
-
   .columns.is-mobile>.column.is-one-quarter {
     flex: auto !important;
     margin-right: 30px;
   }
 
+}
+
+@media only screen and (min-width: 1088px) {
+
+  .container {
+    position: absolute !important;
+  }
+}
+
+@media only screen and (max-width: 1087px) {
+
+  .container {
+    position: relative !important;
+  }
 }
