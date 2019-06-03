@@ -112,6 +112,16 @@ h3.shake-text {
   margin: 0 auto;
 }
 
+.timeline-title {
+  color: #43C6AC !important;
+}
+
+.tag:not(body).is-primary {
+  background: #fff !important;
+  color: #000 !important;
+  border-bottom: #000 solid 1px;
+}
+
 @media only screen and (min-width: 868px) {
   body>div#main-about {
     margin: 1em;
