@@ -28,7 +28,7 @@ div#main-portfolio {
 }
 
 .underline {
-  border-bottom: 2px solid currentColor;
+  border-bottom: 2px solid #43C6AC;
   display: inline-block;
   line-height: 0.85;
   text-shadow:
@@ -175,7 +175,7 @@ div.column.column.is-one-quarter.item.javascript {
 }
 
 .content h3 {
-  font-size: 1.4em !important;
+  font-size: 1.34em !important;
 }
 
 .header {

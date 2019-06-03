@@ -85,7 +85,7 @@ h3.shake-text {
 }
 
 .underline {
-  border-bottom: 2px solid currentColor;
+  border-bottom: 2px solid #43C6AC;
   display: inline-block;
   line-height: 0.85;
   text-shadow:
@@ -94,8 +94,21 @@ h3.shake-text {
     -2px 2px white,
     -2px -2px white;
 }
+
+.alignleft {
+  float: left;
+  display: block;
+}
+.alignright {
+	float: right;
+}
+
+.underline-2 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #43C6AC;
+}
 .center-emoji-effect {
-  text-align: center;
   margin-top: -0.1em !important;
 }
 /* div.columns.is-mobile.is-centered.is-vcentered {
@@ -119,8 +132,18 @@ h3.shake-text {
 .tag:not(body).is-primary {
   background: #fff !important;
   color: #000 !important;
-  border-bottom: #000 solid 1px;
+  font-size: 120% !important;
 }
+
+i.fas.fa-caret-right {
+  color: #43C6AC;
+}
+
+td.no-line {
+  border-bottom: none !important;
+}
+
+
 
 @media only screen and (min-width: 868px) {
   body>div#main-about {

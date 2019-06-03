@@ -133,6 +133,14 @@ ul.social-links.active.open>li {
     padding-left: 10px;
 }
 
+ul.social-links li a {
+    color: #43C6AC;
+}
+
+ul.social-links li a:hover {
+    color: #000;
+}
+
 ul.social-links.active.open {
     z-index: 1001;
     height: inherit;
@@ -289,8 +297,6 @@ a.pad-top-mobile {
 	background: url(../images/Preloader_2.gif) center no-repeat #fff;
 }
 
-
-
 /* DESKTOP SIZES */
 @media only screen and (min-width: 868px) {
     body {
@@ -437,6 +443,15 @@ a.pad-top-mobile {
         display: inline;
         padding: 0 10px 0px 10px;
     }
+
+    ul.social-links li a {
+        color: #43C6AC;
+    }
+
+    ul.social-links li a:hover {
+        color: #000;
+    }
+    
     ul.social-links {
         padding-bottom: 15px;
     }

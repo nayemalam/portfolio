@@ -47,7 +47,7 @@ body>div#main-media {
     margin-bottom: 30px;
   }
   .underline {
-    border-bottom: 2px solid currentColor;
+    border-bottom: 2px solid #43C6AC;
     display: inline-block;
     line-height: 0.85;
     text-shadow:

@@ -1,15 +1,15 @@
 /* override index animations */
-@keyframes slideInFromBottom {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
   
   body>div#main-speak {
-      animation: 1s ease-out 0s 1 slideInFromBottom;
+      animation: 1s ease-out 0s 1 slideInFromRight;
     }
     
     body>div#main-speak {
@@ -38,7 +38,7 @@
       }
 
       .underline {
-        border-bottom: 2px solid currentColor;
+        border-bottom: 2px solid #43C6AC;
         display: inline-block;
         line-height: 0.85;
         text-shadow:
