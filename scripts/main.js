@@ -10,9 +10,15 @@ console.log("Are you a developer? Let's talk!")
 //     e.preventDefault();
 // });
 
+// $(window).load(function() {
+//     // Animate loader off screen
+//     $(".se-pre-con").fadeOut("slow");;
+// });
 
 
 $(document).ready(function () {
+    
+    $(".se-pre-con").fadeOut("slow");;
 
     // include aos framework
     $(function() {
