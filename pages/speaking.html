@@ -31,7 +31,6 @@
         <link rel="stylesheet" href="../css/bulma.min.css">
         <link rel="stylesheet" href="../css/hover-min.css">
 
-
     </head>
     <!-- MAIN NAV -->
     <body>
@@ -80,39 +79,75 @@
             
             <!-- Main --> 
             <div id="play-video" class="vid-container hidden-div">
-                <a href="#"><img class="hvr-shrink lozad" src="../images/weday-play.png" width="100%" alt=""></a>
+                <a href="#"><img class="hvr-shrink lozad" src="../images/video-thumbnails/weday-play.png" width="100%" alt=""></a>
             </div>
 
             <div id="displayDiv" class="vid-container" style="display: none;">
                 <iframe id="vid_frame" src="" width="560" height="315" frameborder="0"></iframe>
             </div>
             <!-- Playlist -->
-            <div class="vid-item" onClick="document.getElementById('vid_frame').src='../images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4';">
-                <div class="thumb hvr-pulse-grow">
-                    <img src="../images/weday.jpg" class="lozad">
-                </div>
-                <div class="desc">
-                    WeDay Speech
+            <div class="vid-list-container">
+                <div class="vid-list">
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='../images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4';">
+                        <div class="thumb hvr-pulse-grow">
+                            <img src="../images/video-thumbnails/weday.jpg" class="lozad">
+                        </div>
+                        <div class="desc">
+                            WEDay Speech 2018
+                        </div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/YWba-iXlF80?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb hvr-pulse-grow">
+                            <img src="https://img.youtube.com/vi/YWba-iXlF80/0.jpg" class="lozad">
+                        </div>
+                        <div class="desc">
+                            Happiness : a Product, Not a Goal | TEDxMcGill
+                        </div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/x2pQ3g5EL6Q?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb hvr-pulse-grow">
+                            <img src="https://img.youtube.com/vi/x2pQ3g5EL6Q/0.jpg" class="lozad">
+                        </div>
+                        <div class="desc">
+                            Let them know who you are | TEDxMarianopolis College
+                        </div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLeadersToday%2Fvideos%2F1820985827948080%2F&autoplay=1&mute=0'">
+                        <div class="thumb hvr-pulse-grow">
+                            <img src="../images/video-thumbnails/LeadersOfToday.png" class="lozad">
+                        </div>
+                        <div class="desc">
+                            Speak Up | Leaders of Today Message
+                        </div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/W1hAoCRG4KA?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb hvr-pulse-grow">
+                            <img src="https://img.youtube.com/vi/W1hAoCRG4KA/0.jpg" class="lozad">
+                        </div>
+                        <div class="desc">
+                            Optimizing Data: Leveraging Accurate Information | NGL - Pendopharm
+                        </div>
+                    </div>
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/qPdDIxHAZGw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                        <div class="thumb hvr-pulse-grow">
+                            <img src="https://img.youtube.com/vi/qPdDIxHAZGw/0.jpg" class="lozad">
+                        </div>
+                        <div class="desc">
+                            2015: Top 20 Under 20 Promo Video
+                        </div>
+                    </div>
+                <div class="arrows">
+                    <div class="arrow-left">
+                        <i class="fa fa-chevron-left fa-lg"></i>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fa fa-chevron-right fa-lg"></i>
+                    </div>
                 </div>
             </div>
-            <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/YWba-iXlF80?autoplay=1&rel=0&showinfo=0&autohide=1'">
-                <div class="thumb hvr-pulse-grow">
-                    <img src="https://img.youtube.com/vi/YWba-iXlF80/0.jpg" class="lozad">
-                </div>
-                <div class="desc">
-                    Happiness : a Product, Not a Goal | Nayem Alam | TEDxMcGill
-                </div>
-            </div>
-            <div class="arrows">
-                <div class="arrow-left">
-                    <i class="fa fa-chevron-left fa-lg"></i>
-                </div>
-                <div class="arrow-right">
-                    <i class="fa fa-chevron-right fa-lg"></i>
-                </div>
-            </div>
+        </div>
 
-            <div style="margin-bottom: 250px;"></div>
+            <!-- <div style="margin-bottom: 5px;"></div> -->
             <!-- <p style="padding-bottom: 30px; text-align: center; font-size: 10px;"> <b>Note:</b> You have to click on the <i><u>play</u></i> button before playing any playlist videos.</p> -->
 
         </div>
@@ -144,13 +179,6 @@
                 $(".vid-list-container").stop().animate({
                     scrollLeft: "-=336"
                 }, 750);
-            });
-            var ownVideos = $("#vid_frame");
-            $.each(ownVideos, function (i, video) {                
-                var frameContent = $(video).contents().find('body').html();
-                if (frameContent) {
-                    $(video).contents().find('body').html(frameContent.replace("autoplay", ""));
-                }
             });
             $('#play-video').click('click', function(ev) {
                 $("#vid_frame")[0].src="../images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4";

@@ -67,10 +67,9 @@
       }
 
       .vid-list-container {
-        width: 92%;
         overflow: hidden;
         margin-top: 20px;
-        margin-left:4%;
+        /* margin-left:4%; */
         padding-bottom: 20px;
       }
       
@@ -83,12 +82,13 @@
       
 
       .vid-item {
-        display: block;
+        display: inline;
         width: 148px;
         height: 148px;
         float: left;
         margin: 0;
         padding: 10px;
+        padding-bottom: 40% !important;
       }
 
       .thumb {
@@ -111,9 +111,10 @@
       }
       /* Arrows */
       .arrows {
-        position:relative;
+        position:fixed;
         width: 96px;
         margin: 0 auto;
+        left: 40%;
       }
       
       .arrow-left {
@@ -152,34 +153,24 @@
 
         /* Arrows */
         .arrows {
-          position:relative;
-          width: 100%;
-          top: 10em;
-        }
-        
-        .arrow-left {
-          color: #fff;
-          position: absolute;
-          background: #777;
-          padding: 15px;
-          left: -25px;
-          top: -130px;
-          z-index: 99;
-          cursor: pointer;
-        }
-        
-        .arrow-right {
-          color: #fff;
-          position: absolute;
-          background: #777;
-          padding: 15px;
-          right: -25px;
-          top: -130px;
-          z-index:100;
-          cursor: pointer;
+          display: none;
         }
 
+        .vid-item {
+          display: table-cell;
+          width: 148px;
+          height: 148px;
+          margin: 0;
+          padding: 10px;
+  
+        }
         
+        .vid-list {
+          width: auto;
+          position: relative;
+          top:0;
+          left: 0;
+        }
 
         
     }
