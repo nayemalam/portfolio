@@ -200,6 +200,11 @@ div.column.column.is-one-quarter.item.javascript {
   animation: fadeIn ease 5s;
 }
 
+.columns.is-mobile>.column.is-2 {
+  flex: auto !important;
+  width: inherit !important;
+}
+
 @media only screen and (min-width: 868px) {
   body>div#main-portfolio {
     margin: 1em;
@@ -212,7 +217,7 @@ div.column.column.is-one-quarter.item.javascript {
   }
 
   .container {
-    position: absolute !important;
+    position: inherit !important;
   }
   
   .header {
@@ -231,20 +236,17 @@ div.column.column.is-one-quarter.item.javascript {
     text-align: center;
   }
 
-  .content ol {
-    margin-left: -5em !important;
-  }
 
-  .columns.is-mobile>.column.is-one-quarter {
+  .columns.is-mobile>.column.is-2 {
     flex: none !important;
-    margin-right: 0;
+    margin-right: 20px;
   }
 
   .columns.is-mobile {
     display: flex !important;
   }
 
-  .columns.is-mobile>.column.is-one-quarter {
+  .columns.is-mobile>.column.is-2 {
     width: 25% !important;
   }
 
@@ -252,12 +254,20 @@ div.column.column.is-one-quarter.item.javascript {
     margin-left: 1em;
   }
 
+  div.column {
+    margin-right: 10em;
+  }
+
+  .column {
+    padding: 0 !important;
+  }
+
 }
 
 @media only screen and (max-width: 570px) {
-  .columns.is-mobile>.column.is-one-quarter {
+  .columns.is-mobile>.column.is-2 {
     flex: auto !important;
-    margin-right: 30px;
+    width: inherit !important;
   }
 
 }
@@ -273,5 +283,33 @@ div.column.column.is-one-quarter.item.javascript {
 
   .container {
     position: relative !important;
+  }
+}
+
+@media only screen and (min-width: 1592px) {
+
+  .container {
+    margin-left: 5em !important;
+  }
+}
+
+@media only screen and (min-width: 2136px) {
+
+  .container {
+    margin-left: 15em !important;
+  }
+}
+
+@media only screen and (min-width: 2688px) {
+
+  .container {
+    margin-left: 35em !important;
+  }
+}
+
+@media only screen and (min-width: 2920px) {
+
+  .container {
+    margin-left: 45em !important;
   }
 }
