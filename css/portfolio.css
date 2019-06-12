@@ -135,7 +135,7 @@ h4.title{
 }
 
 .content ol {
-  margin-left: -1em !important;
+  margin-left: -7em !important;
 }
 .btn {
   position: relative;
@@ -261,13 +261,18 @@ div.column.column.is-one-quarter.item.javascript {
   .column {
     padding: 0 !important;
   }
-
 }
 
 @media only screen and (max-width: 570px) {
   .columns.is-mobile>.column.is-2 {
     flex: auto !important;
     width: inherit !important;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .content ol {
+    margin-left: -1em !important;
   }
 
 }
@@ -277,6 +282,10 @@ div.column.column.is-one-quarter.item.javascript {
   .container {
     position: absolute !important;
   }
+  .content ol {
+    margin-left: -7em !important;
+  }
+  
 }
 
 @media only screen and (max-width: 1087px) {
@@ -291,12 +300,18 @@ div.column.column.is-one-quarter.item.javascript {
   .container {
     margin-left: 5em !important;
   }
+  .content ol {
+    margin-left: -7em !important;
+  }
 }
 
 @media only screen and (min-width: 2136px) {
 
   .container {
     margin-left: 15em !important;
+  }
+  .content ol {
+    margin-left: -7em !important;
   }
 }
 
@@ -305,11 +320,17 @@ div.column.column.is-one-quarter.item.javascript {
   .container {
     margin-left: 35em !important;
   }
+  .content ol {
+    margin-left: -7em !important;
+  }
 }
 
 @media only screen and (min-width: 2920px) {
 
   .container {
     margin-left: 45em !important;
+  }
+  .content ol {
+    margin-left: -7em !important;
   }
 }
