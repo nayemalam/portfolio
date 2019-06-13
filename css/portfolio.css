@@ -205,6 +205,36 @@ div.column.column.is-one-quarter.item.javascript {
   width: inherit !important;
 }
 
+#notification {
+  position: fixed;
+  right: 0;
+  top:120px; /* Set to 0 or wherever */
+  width:42%; /* set to 100% if space is available */
+  z-index:105;
+  text-align:center;
+  font-size:14px;
+  font-weight:bold;
+  color:white;
+  background-color:#43C6AC;
+  border-radius: 15px 0px 0px 15px;
+  padding:5px;
+}
+#notification span.dismiss {
+  border:2px solid #FFF;
+  padding:0 5px;
+  cursor:pointer;
+  float:right;
+  margin-right:10px;
+  margin-left: 2px;
+  border-radius: 50%;
+}
+
+#notification a {
+  color:white;
+  text-decoration:none;
+  font-weight:bold
+}
+
 @media only screen and (min-width: 868px) {
   body>div#main-portfolio {
     margin: 1em;
@@ -260,6 +290,30 @@ div.column.column.is-one-quarter.item.javascript {
 
   .column {
     padding: 0 !important;
+  }
+
+  #notification {
+    position: fixed;
+    right: 0;
+    top:40px; /* Set to 0 or wherever */
+    width:42%; /* set to 100% if space is available */
+    z-index:105;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+    color:white;
+    background-color:#43C6AC;
+    border-radius: 15px 0px 0px 15px;
+    padding:5px;
+  }
+  #notification span.dismiss {
+    border:2px solid #FFF;
+    padding:0 5px;
+    cursor:pointer;
+    float:right;
+    margin-right:10px;
+    margin-left: 2px;
+    border-radius: 50%;
   }
 }
 

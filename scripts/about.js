@@ -1,3 +1,5 @@
+console.log("Enter about.");
+
 $(document).ready(function () {
     $('#libraries-used').hide();
     $('#read-more-btn').click('click', function(e) {
