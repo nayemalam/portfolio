@@ -206,7 +206,7 @@ div.column.column.is-one-quarter.item.javascript {
 }
 
 #notification {
-  position: fixed;
+  position: absolute;
   right: 0;
   top:120px; /* Set to 0 or wherever */
   width:42%; /* set to 100% if space is available */
@@ -293,7 +293,7 @@ div.column.column.is-one-quarter.item.javascript {
   }
 
   #notification {
-    position: fixed;
+    position: absolute;
     right: 0;
     top:40px; /* Set to 0 or wherever */
     width:42%; /* set to 100% if space is available */
