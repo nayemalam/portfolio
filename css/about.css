@@ -147,6 +147,10 @@ td.no-line {
   font-size: 16px !important;
 }
 
+td.table-desc {
+  text-align: center;
+  border: none !important;
+}
 
 @media only screen and (min-width: 868px) {
   body>div#main-about {
@@ -182,6 +186,10 @@ td.no-line {
     right: 10px;
     transition: 0.5s;
     z-index: 1;
+  }
+  td.table-desc {
+    text-align: center;
+    border: none !important;
   }
 
 }
