@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
- __        __   _ _                       
- \ \      / /__| | |                      
-  \ \ /\ / / _ \ | |                      
-   \ V  V /  __/ | |_                     
-    \_/\_/ \___|_|_( )                    
-  _   _      _ _   |/    ____             
- | | | | ___| | | ___   |  _ \  _____   __
- | |_| |/ _ \ | |/ _ \  | | | |/ _ \ \ / /
- |  _  |  __/ | | (_) | | |_| |  __/\ V / 
- |_| |_|\___|_|_|\___/  |____/ \___| \_(_)
--->
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Nayem Alam | Motivation Slam Poet and Developer</title>
+        <title>Hey!</title>
 
         <!-- Facebook and Twitter integration -->
         <meta property="og:title" content=""/>
@@ -34,21 +21,18 @@
         <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
         <!-- Stylesheets -->
         <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/contact.css">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap" rel="stylesheet">
         <!-- Externals -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="/assets/css/aos.css" />
         <link rel="stylesheet" href="/assets/css/bulma.min.css">
         <link rel="stylesheet" href="/assets/css/hover-min.css">
-        <link rel="stylesheet" href="/assets/css/lity.min.css">
-    </head>
 
+    </head>
     <!-- MAIN NAV -->
     <body>
-    <div class="se-pre-con"></div>
         <div id="aside">
             <div id="on-top">
             <figure>
@@ -86,27 +70,59 @@
                 </ul>
             </nav>
             
-            </div>
+        </div>
         <!-- MAIN CONTENT AREA -->
-        <div style="position: absolute;"></div> <!-- Able to add another class! -->
-        <div id="testing" style="position: absolute;"></div>
-        <div id="main" class="content">
-            
-            <h1 class="title-na pad-32-top">Designer 🔥</h1>
-            <h1 class="title-na">Developer 🥂</h1>
-            <h1 class="title-na">Speaker 🎤</h1>
-
-            <div id="particles-js" class="play"><a href="https://www.youtube.com/embed/YWba-iXlF80?&autoplay=1" class="btn-center hvr-radial-out" data-lity><i class="fab fa-google-play fa-lg"></i></a></div>
-            
-            <div class='test'>
-                <div style='float: left;'>
-                    <a href="/assets/offline-resume/Nayem Resume 2019.pdf" target="_blank" class="btn hvr-bounce-to-right">Download CV   <i class="far fa-arrow-alt-circle-down"></i></a>
+        <!-- <div style="position: absolute;"><h1>Hello</h1></div> -->
+        <div id="main-contact" class="content">    
+            <h3 class="underline fade-in pad-top-left"><i>Don't hesitate to get in touch!</i> 📨</h3>      
+            <form id="contactform" class="center" action="//formspree.io/nayemalam@hotmail.com" method="POST">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Your name (required)" required>
+                    </div>
                 </div>
-                <div style='float: right;'>
-                    <a href="mailto:nayem.alam@mail.mcgill.ca?subject=Hey Nayem! | From Website" class="btn hvr-bounce-to-left pad-top-mobile">Message Me   <i class="far fa-paper-plane"></i></a>
+                
+                <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" name="_replyto" placeholder="Your email (required)" required>
+                    <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                    </span>
+                    
                 </div>
-            </div>
-
+                </div>
+                
+                <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <div class="select">
+                    <select name="_subject">
+                        <option>Hire me to speak</option>
+                        <option>Need a website</option>
+                        <option>Work on a project together</option>
+                        <option>Coffee</option>
+                        <option>Other</option>
+                    </select>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                </div>
+                </div>
+                
+                <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-primary hvr-bounce-in" type="submit">Send <i class="fab fa-telegram-plane"></i></button>
+                    <input type="hidden" name="_next" value="nayemalam.herokuapp.com/pages/thanks.html"/>
+                </div>
+                </div>
+            </form>
         </div>
     </body>
 
@@ -120,13 +136,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/aos.js"></script>
-    <script src="/assets/js/particles.min.js"></script>
-    <script src="/assets/js/lity.min.js"></script>
-    <script>
-        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-        particlesJS.load('particles-js', './assets/particles.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-    </script>
-
 </html>
