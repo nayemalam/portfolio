@@ -18,17 +18,17 @@
         <meta name="twitter:card" content="" />
 
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link rel="stylesheet" href="/assets/css/speaking.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/speaking.css">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <!-- Externals -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="/assets/css/aos.css" />
-        <link rel="stylesheet" href="/assets/css/bulma.min.css">
-        <link rel="stylesheet" href="/assets/css/hover-min.css">
+        <link rel="stylesheet" href="assets/css/aos.css" />
+        <link rel="stylesheet" href="assets/css/bulma.min.css">
+        <link rel="stylesheet" href="assets/css/hover-min.css">
 
     </head>
     <!-- MAIN NAV -->
@@ -50,7 +50,7 @@
 
             <nav class="sidebar"> 
                 <a href="index.html">
-                    <div id="avatar"><img src="/assets/images/favicon.png" data-tilt alt="nayem-logo" class="image is-2by5"></div>
+                    <div id="avatar"><img src="assets/images/favicon.png" data-tilt alt="nayem-logo" class="image is-2by5"></div>
                     <h1 class="fig-caption">nayem alam</h1>
                 </a>
                 <div class="center-items">
@@ -79,7 +79,7 @@
             
             <!-- Main --> 
             <div id="play-video" class="vid-container hidden-div">
-                <a href="#"><img class="hvr-shrink lozad" src="/assets/images/video-thumbnails/weday-play.png" width="100%" alt=""></a>
+                <a href="#"><img class="hvr-shrink lozad" src="assets/images/video-thumbnails/weday-play.png" width="100%" alt=""></a>
             </div>
 
             <div id="displayDiv" class="vid-container" style="display: none;">
@@ -88,9 +88,9 @@
             <!-- Playlist -->
             <div class="vid-list-container">
                 <div class="vid-list">
-                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='/assets/images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4';">
+                    <div class="vid-item" onClick="document.getElementById('vid_frame').src='assets/images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4';">
                         <div class="thumb hvr-pulse-grow">
-                            <img src="/assets/images/video-thumbnails/weday.jpg" class="lozad">
+                            <img src="assets/images/video-thumbnails/weday.jpg" class="lozad">
                         </div>
                         <div class="desc">
                             WEDay Speech 2018
@@ -114,7 +114,7 @@
                     </div>
                     <div class="vid-item" onClick="document.getElementById('vid_frame').src='https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLeadersToday%2Fvideos%2F1820985827948080%2F&autoplay=1&mute=0'">
                         <div class="thumb hvr-pulse-grow">
-                            <img src="/assets/images/video-thumbnails/LeadersOfToday.png" class="lozad">
+                            <img src="assets/images/video-thumbnails/LeadersOfToday.png" class="lozad">
                         </div>
                         <div class="desc">
                             Speak Up | Leaders of Today Message
@@ -161,8 +161,8 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script>
         const observer = lozad(); // lazy loads elements with default selector as '.lozad'
         observer.observe();
@@ -181,7 +181,7 @@
             }, 750);
         });
         $('#play-video').click('click', function(ev) {
-            $("#vid_frame")[0].src="/assets/images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4";
+            $("#vid_frame")[0].src="assets/images/2018_MTL_Youth_Speaker_Nayem_Alam.mp4";
             $('.hidden-div').hide();
             document.getElementById("displayDiv").style.display = "block";
             ev.preventDefault();
