@@ -1,10 +1,10 @@
 .DS_Store
-css/landing.css
-css/bulma-timeline.min.css
-scripts/aos.js
-scripts/particles.min.js
-scripts/portfolio.js
-scripts/about.js
+assets/css/bulma-timeline.min.css
+assets/scripts/aos.js
+assets/scripts/particles.min.js
+assets/scripts/portfolio.js
+assets/scripts/about.js
+assets/images
 
 
 
