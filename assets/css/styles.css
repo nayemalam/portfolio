@@ -310,6 +310,12 @@ a.pad-top-mobile {
     html {
         background-color: #eaeeef !important;
     }
+    ::-moz-selection { 
+        background: rgba(67, 198, 172, 0.678);
+    }
+    ::selection { 
+        background: rgba(67, 198, 172, 0.678); 
+    }
     
     div.menu-toggler {
         display: none;
