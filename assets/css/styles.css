@@ -297,6 +297,13 @@ a.pad-top-mobile {
 	background: url('../images/pacman.gif') center no-repeat #fff;
 }
 
+.lastDate {
+    float: right;
+    color: #bfbfbf;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
 /* DESKTOP SIZES */
 @media only screen and (min-width: 868px) {
     body {
@@ -524,12 +531,16 @@ a.pad-top-mobile {
     div#particles-js {
         position: fixed;
     }
-
-
-    
+   
 
     /* Include page loader */
    
 
 }
 
+@media only screen and (max-width: 815px) {
+
+    .lastDate {
+        display: none;
+    }
+}
