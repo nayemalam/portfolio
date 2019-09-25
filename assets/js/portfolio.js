@@ -4,7 +4,7 @@ console.log("Enter portfolio.");
 
     'use strict';
 
-    $("#notification").show(1000).append('Sometimes there can be a glitch with the portfolio images. Just click on any filter and it should go back to normal. 😄');
+    $("#notification").show(1000).append('Sometimes there can be a glitch with the portfolio images. Just click on any filter and it should go back to normal.');
     $(".dismiss").click(function(){
         $("#notification").fadeOut("slow");
     });
