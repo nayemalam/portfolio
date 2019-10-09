@@ -104,9 +104,16 @@ h3.shake-text {
 }
 
 .underline-2 {
+  /* text-decoration-line: underline; */
+  background-color: rgb(67,198,172, 0.3);
+  /* text-decoration-color: rgb(67,198,172, 0.5); */
+}
+.underline-2:hover {
+  background-color: #fff;
+}
+.underline-3 {
   text-decoration-line: underline;
-  text-decoration-style: dashed;
-  text-decoration-color: #43C6AC;
+  text-decoration-color: rgb(67,198,172, 0.3);
 }
 .center-emoji-effect {
   margin-top: -0.1em !important;
