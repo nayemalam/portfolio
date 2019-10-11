@@ -298,10 +298,18 @@ a.pad-top-mobile {
 }
 
 .lastDate {
-    float: right;
     color: #bfbfbf;
     font-size: 10px;
-    margin-top: 5px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+.bottom-right {
+    color: #3a3a3a;
+    font-size: 15px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
 }
 
 /* DESKTOP SIZES */
@@ -543,4 +551,8 @@ a.pad-top-mobile {
     .lastDate {
         display: none;
     }
+    .bottom-right {
+        display: none;
+    }
+    
 }
